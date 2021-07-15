@@ -18,10 +18,14 @@
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "cross-env": "^7.0.3",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.3"
   },
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -32,6 +36,12 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bhagya-it19110608/Test/issues"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "homepage": "https://github.com/bhagya-it19110608/Test#readme"
 }
